@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+div > p {
+  text-align: justify;
+}
+
+.navbar-brand h1 {
+  padding-left: 30px;
+}
+
+.col-md-4,
+.col-sm-6,
+.col-xs-12 {
+  padding: 1rem;
+  padding-left: 20px !important;
+  border: 15px solid #fff;
+  background-color: #d0d0d0;
+}
+
+.my-navbar {
+  background-color: #d0d0d0;
+  border-bottom: 5px solid black;
+  padding: 0 !important;
+}
+
+/********** Others devices **********/
+@media (min-width: 768px) {
+  .navbar-toggler {
+    display: none !important;
+  }
+  .navbar-collapse {
+    display: none !important;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+  #nav-list {
+    margin-bottom: 1px;
+    margin-top: 0px;
+  }
+
+  #nav-list li {
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: -1px;
+  }
+  #nav-list li:hover {
+    font-weight: bold;
+    background-color: #fff;
+  }
+}
